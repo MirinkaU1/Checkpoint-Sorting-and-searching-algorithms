@@ -5,13 +5,12 @@ function triParInsertion(arr) {
     let current = arr[i];
     j = i - 1;
 
-    // Déplacer les éléments de arr[0..i-1], qui sont plus grands que current,
-    // d'une position vers l'avant
-    while (j >= 0 && arr[j] > current) {
+    // Déplacer les éléments de arr[0..i-1], qui sont plus grands que current, d'une position vers l'avant
+    while (j >= 0 && arr[j] > card) {
       arr[j + 1] = arr[j];
       j = j - 1;
     }
-    arr[j + 1] = current;
+    arr[j + 1] = card;
   }
 
   return arr;
